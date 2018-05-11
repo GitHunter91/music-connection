@@ -1,0 +1,118 @@
+body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*authcss*/
+@media(max-width:450px){
+.outside:before{
+    background-size: 2000px;
+    background-position-x: -550px;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    content: '';
+    background-image: url('../assets/_studio sq soundboard.jpg');
+    background-repeat: no-repeat;
+    height: 110vh;
+    width: 110vw;
+    margin-left:-5%;
+    margin-top:-5%;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+     filter: blur(4px);
+    z-index: -1;
+}
+
+
+.logo {
+    background: white;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+    background:transparent;
+}
+
+.login {
+    background: linear-gradient(to left, rgba(0,0,0, .4), rgba(0,0,0,1) ,rgba(0,0,0,.4));
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 1px 2px rgb(0, 0, 0);
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    border-left: 0;
+    border-right: 0;
+    width: 100vw;
+}
+
+.foo{
+    margin-top: 24vh;
+    margin-bottom: 18vh;
+    height: 40vh;
+
+}
+}
+
+
+/* different size 
+*/
+
+@media(min-width: 451px){
+.outside:before {
+    position: fixed;
+    content: '';
+    background-image: url('../assets/_studio sq soundboard.jpg');
+    background-color: red;
+    background-repeat: no-repeat;
+    height: 110vh;
+    width: 110vw;
+    margin-left:-5%;
+    margin-top:-5%;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+     filter: blur(4px);
+    z-index: -1;
+}
+
+
+.logo {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+    background:transparent;
+    position: absolute;
+    height: 100vh;
+    z-index: 0;
+}
+
+.login {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.062), rgba(0,0,0,.8) ,rgba(255, 255, 255, 0.1));
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 1px 2px rgb(0, 0, 0);
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    border-left: 0;
+    border-right: 0;
+    width: 100vw;
+}
+
+.foo{
+    margin-top: 16vh;
+    margin-bottom: 15vh;
+    height: 50vh;
+
+}
+}

@@ -1,0 +1,1 @@
+select * from userData where userid = $1

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(to right, red,white,blue); */
+}
+
+@media(max-width: 450px){
+.dash-container {
+    background:linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,1));
+}
+.header{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+    align-content: space-between;
+    padding-bottom: 4px;
+}
+.mini-logo  img {
+    margin-top: 1vh;
+    margin-left: 2vh;
+    width: 8vh;
+}
+
+.dash-log{
+    font-family: 'Lato', sans-serif;
+    background: radial-gradient(center,rgb(89, 89, 89), rgb(48, 48, 48));
+    color: rgb(186, 186, 186);
+    margin-right: 2vh;
+    margin-top: 2vh;
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 2vh 4vh;
+}
+
+.drop {
+    font-family: 'Lato', sans-serif;
+    height: 5vh;
+}
+.search {
+    width: 100%;
+}
+.drop-content.show{
+    display: block;
+}
+
+.drop-content{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.drop-content a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    background: black;
+    font-size: 19px;
+    color: white;
+    display:block;
+}
+
+.dropbtn{
+    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    /* border-color: black; */
+    /* border-left: 2px; */
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100%;
+}
+
+}
+
+.dash-container {
+    background:linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,1));
+}
+.header{
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+    align-content: space-between;
+    padding-bottom: 8px;
+}
+.mini-logo  img {
+    margin-top: 1vh;
+    margin-left: 2vh;
+    width: 8vh;
+}
+
+.dash-log{
+    background: radial-gradient(center,rgb(89, 89, 89), rgb(48, 48, 48));
+    color: rgb(186, 186, 186);
+    margin-right: 2vh;
+    margin-top: 2vh;
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 2vh 4vh;
+}
+
+.drop {
+    height: 5vh;
+}
+
+.drop-content.show{
+    display: block;
+}
+
+.drop-content{
+    background-color: white;
+    width: 100%;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.drop-content a {
+    font-style: Verdana;
+    background: black;
+    color: white;
+    display:block;
+}
+
+.dropbtn{
+    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100%;
+}

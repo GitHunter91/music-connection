@@ -1,0 +1,43 @@
+@media(max-width: 450px){
+    .admin{
+    position: absolute;
+    left: 39vw;
+    bottom: 90%;
+    color: white;
+}
+    .list{
+        margin-top: 20px;
+        color:white;
+        position: absolute;
+        left: 25vw;
+        bottom: 70%;
+    }
+    p{
+        color: red;
+        margin-left: 10px;
+        display: inline;
+    }
+}
+
+@media(min-width: 450px){
+    .admin{
+        position: absolute;
+        left: 45.5vw;
+        bottom: 90%;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .list{
+        position: absolute;
+        left: 45vw;
+        bottom: 70%;
+        color: white;
+    }
+    
+    p{
+        display: inline;
+        margin-left: 10px;
+        color: red;
+    }
+}

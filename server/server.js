@@ -5,7 +5,7 @@ const session = require('express-session')
 const massive = require('massive')
 const bodyParser = require('body-parser')
 const uCtrl = require('./uCtrl')
-const axios = require('axios')
+
 
 // session middleware to intialize session
 const checkForSession = require('./checkForSession')

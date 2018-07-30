@@ -79,11 +79,11 @@ class Live extends Component {
     render() {
         // create variable to hold the value of the mapped 'live' array from the reducer
         const display = this.props.live.map( e => {
-            return e.map( a => {
+            return e.map( (a,i) => {
                 /* console.log(a) */
                 // create link behind image using the name from index 1 in each element && add image using index 0 in each element  ---- line 89
                 // create link to chat passing in the current state of the user clicked where the name from index 1 will be used ---- line 91
-                return <div className='vid' >
+                return <div key={i} className='vid' >
                                 <div className='i' >
                                         <a href={`https://twitch.tv/${a[1]}`}><img src={a[0]} alt='stream'/></a>
                                 </div>

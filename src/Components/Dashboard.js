@@ -162,12 +162,12 @@ class Dashboard extends Component {
     /* console.log(this.props) */
     /* console.log(this.props.follows) */
     // create variable to hold value of mapped follows array 
-    const following = this.props.follows.map( e => {
+    const following = this.props.follows.map( (e,i) => {
         // return structure of mapped content
         // create a link behind the picture of each streamer ---- line 168
         // create a link to chat component based on the username ---- line 171
         // create a link to forum component based on the username ---- line 171 (**** currently not in place **** ) 
-        return   <div className='vid'>
+        return   <div key={i} className='vid'>
                         <div className='i'>
                             <a href={`https://twitch.tv/${e[1]}`} ><img src={e[0]} alt='streams'/> </a>
                         </div>

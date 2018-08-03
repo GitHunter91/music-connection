@@ -76,7 +76,10 @@ app.get('/api/isAdmin/', uCtrl.isAdmin)
 // gets list of all users that have logged into the site ( used for admin page conditional render )
 app.get('/api/getUsers', uCtrl.getUsers)
 
-
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
 
 // set port that application will be running on
 const port = 3050

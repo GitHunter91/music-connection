@@ -16,6 +16,7 @@ const app = express()
 // use body-parser 
 app.use( bodyParser.json() )
 
+app.use(express.static(path.join(__dirname, '/../build')));
 // set values for session
 app.use( session({
     secret: process.env.SESSION_SECRET,

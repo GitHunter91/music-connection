@@ -5,6 +5,7 @@ const session = require('express-session')
 const massive = require('massive')
 const bodyParser = require('body-parser')
 const uCtrl = require('./uCtrl')
+const path = require('path')
 
 
 // session middleware to intialize session
@@ -77,7 +78,6 @@ app.get('/api/isAdmin/', uCtrl.isAdmin)
 // gets list of all users that have logged into the site ( used for admin page conditional render )
 app.get('/api/getUsers', uCtrl.getUsers)
 
-const path = require('path')
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 })

@@ -13,7 +13,7 @@ export default class Chat extends Component {
             <div className='dash-container'>
                     <div className='chat-vid'>
                         <iframe title='7'
-                            src={`http://player.twitch.tv/?channel=${this.props.location.state}&muted=false`}
+                            src={`https://player.twitch.tv/?channel=${this.props.location.state}&muted=false`}
                             frameborder="0"
                             scrolling="no"
                             allowfullscreen="true">
@@ -23,7 +23,7 @@ export default class Chat extends Component {
                         <iframe title='8'
                             frameborder="0"
                             scrolling="yes"
-                            src={`http://www.twitch.tv/embed/${this.props.location.state}/chat`}>
+                            src={`https://www.twitch.tv/embed/${this.props.location.state}/chat`}>
                         </iframe>
                     </div>
             </div>

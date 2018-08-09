@@ -163,7 +163,7 @@ module.exports = {
                         }
                         /* console.log(req.query) */
                         // redirect user to LIVE page of application 
-                        res.redirect('/Live')
+                        res.redirect('/live')
                     })
                 /* console.log() */
             })

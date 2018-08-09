@@ -5,11 +5,11 @@ import logo from '../assets/logo.png'
 export default class Auth extends Component {
 
     login = () => {
-
+        
         // create variable to hold necessary scope for proper user interaction
         const scope = 'channel_read user_read user_follows_edit clips:edit user:edit user:read:email analytics:read:games openid'
         // redirects user to login page of twitch to be redirected back to music-connection application
-        window.location = `https://id.twitch.tv/oauth2/authorize?client_id=${process.env.REACT_APP_TWITCH_CLIENT_ID}&redirect_uri=http://${window.location.origin}/auth/twitch/callback&response_type=code&scope=${scope}`
+        window.location = `https://id.twitch.tv/oauth2/authorize?client_id=${process.env.REACT_APP_TWITCH_CLIENT_ID}&redirect_uri=https://music-connection.us/auth/twitch/callback&response_type=code&scope=${scope}`
     
     }
 

@@ -118,7 +118,7 @@ module.exports = {
         /* console.log(code) */
         
         // make api call to twitch to get access token and refresh token
-        axios.post(`https://id.twitch.tv/oauth2/token?client_id=${process.env.REACT_APP_TWITCH_CLIENT_ID}&client_secret=${process.env.REACT_APP_TWITCH_CLIENT_SECRET}&code=${code}&grant_type=authorization_code&redirect_uri=http://localhost:3000/auth/twitch/callback`)
+        axios.post(`https://id.twitch.tv/oauth2/token?client_id=${process.env.REACT_APP_TWITCH_CLIENT_ID}&client_secret=${process.env.REACT_APP_TWITCH_CLIENT_SECRET}&code=${code}&grant_type=authorization_code&redirect_uri=https://music-connection.us/auth/twitch/callback`)
         .then( response => {
             /* console.log(response.data) */
             /* console.log(req.session) */

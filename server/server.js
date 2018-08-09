@@ -5,7 +5,6 @@ const session = require('express-session')
 const massive = require('massive')
 const bodyParser = require('body-parser')
 const uCtrl = require('./uCtrl')
-const path = require('path')
 
 
 // session middleware to intialize session
@@ -17,7 +16,7 @@ const app = express()
 // use body-parser 
 app.use( bodyParser.json() )
 
-app.use(express.static(path.join(__dirname, '/../build')));
+app.use(express.static(__dirname + '/../build'));
 // set values for session
 app.use( session({
     secret: process.env.SESSION_SECRET,
@@ -77,10 +76,6 @@ app.get('/api/isAdmin/', uCtrl.isAdmin)
 
 // gets list of all users that have logged into the site ( used for admin page conditional render )
 app.get('/api/getUsers', uCtrl.getUsers)
-
-app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, '../build/index.html'));
-})
 
 // set port that application will be running on
 const port = 3050

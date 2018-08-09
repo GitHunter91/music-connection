@@ -5,10 +5,10 @@
   "main": "server/server.js",
   "proxy": {
     "/auth/twitch/callback": {
-      "target": "https://music-connection.us"
+      "target": "http://localhost:3050"
     },
     "/api": {
-      "target": "https://music-connection.us"
+      "target": "http://localhost:3050"
     }
   },
   "dependencies": {

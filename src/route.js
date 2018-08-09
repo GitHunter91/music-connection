@@ -16,10 +16,10 @@ export default (
         <div>
             {window.location.pathname === "/"  ?  null : <Header/> }
             <Route exact path='/' component={ Auth }/>
-            <Route path='/Chat' component={ Chat }/>
-            <Route path='/Dashboard' component={ Dashboard }/>
-            <Route path='/Live' component={ Live } />
-            <Route path='/Admin' component={ Admin } />
+            <Route path='/chat' component={ Chat }/>
+            <Route path='/dashboard' component={ Dashboard }/>
+            <Route path='/live' component={ Live } />
+            <Route path='/admin' component={ Admin } />
         </div>
     </BrowserRouter>
 )
